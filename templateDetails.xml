@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+    <name>bib92</name>
+    <version>1.0.0</version>
+    <creationDate>juin 2017</creationDate>
+    <author>Romain Rouault</author>
+    <authorEmail>rrouault11@gmail.com</authorEmail>
+    <copyright>Copyright (C) 2017 Romain Rouault.</copyright>
+    <description>TPL_BIB92_XML_DESCRIPTION</description>
+    <files>
+        <filename>favicon.ico</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>img</folder>
+        <folder>less</folder>
+        <folder>bootstrap</folder>
+        <folder>script</folder>
+    </files>
+    <positions>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-2</position>
+        <position>position-3</position>
+        <position>position-4</position>
+        <position>position-5</position>
+        <position>position-6</position>
+        <position>position-7</position>
+        <position>position-8</position>
+    </positions>
+    <languages folder="language">
+        <language tag="fr-FR">fr-FR/fr-FR.tpl_bib92.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.tpl_bib92.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+            <field
+            name="sitefluide"
+            type="radio"
+            class="btn-group"
+            default="0"
+            label="TPL_BIB92_SITEFLUIDE_LABEL"
+            description="TPL_BIB92_SITEFLUIDE_DESC"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+            name="compileLess"
+            type="radio"
+            class="btn-group"
+            default="0"
+            label="TPL_BIB92_COMPILELESS_LABEL"
+            description="TPL_BIB92_COMPILELESS_DESC"
+            >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

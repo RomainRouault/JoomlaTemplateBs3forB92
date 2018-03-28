@@ -1,0 +1,186 @@
+/* 
+Feuille ajoutée directement en backend dans l'extension jevents
+*/
+
+/*************************************************************************/
+/********************* Mini calendrier template flat *********************/
+/*************************************************************************/
+
+#flatcal_minical TD.flatcal_weekdays{/*pour taille égale des colonnes 14*7 = ~100*/
+  width : 14%;
+}
+.flatcal_navbar .link_prev, .flatcal_navbar .link_next {/*bug affichage image triangles navigation sur mini calendrier*/
+    min-width: 1rem !important;
+}
+
+#flatcal_minical .flatcal_navbar {
+    background-color: #885555 !important;
+}
+
+img.mod_events_link{
+  filter: invert(1);
+}
+
+.flatcal_month_label a{
+  color : #fff !important;
+}
+
+.full_cal_link td{
+    background-color: #885555 !important;  
+}
+
+#flatcal_minical .flatcal_month_label{
+  font-size : 1.4rem !important;
+}
+
+#flatcal_minical TD.flatcal_weekdays{
+  font-size : 1.4rem !important;
+}
+
+#flatcal_minical .flatcal_daylink{
+  font-size : 1.2rem !important;
+}
+
+#flatcal_minical .flatcal_sundaylink{
+  font-size : 1.2rem !important;
+}
+
+/* évènement simple */
+#flatcal_minical .flatcal_busylink:link {
+    font-size: 1.2rem !important;
+    border: 1px solid #885555 !important;
+    background-color: #885555 !important;
+  	border-radius : 20px;
+  	padding : 3px;
+  	color : #fff !important;
+}
+
+#flatcal_minical .flatcal_busylink {/*pour bug affichage couleur Firefox*/
+    border: 1px solid #885555 !important;
+}
+
+#flatcal_minical .flatcal_busylink:visited{
+  color : #fff !important;
+}
+
+#flatcal_minical .flatcal_busylink:hover {
+    background-color: #fff !important;
+	  color: #555555 !important;
+}
+
+/*aujourdhui*/
+#flatcal_minical .flatcal_todaycell .flatcal_daylink:link {
+    font-size: 1.6rem !important;
+    border: unset !important;
+    background-color: #fff !important;
+  	color: #885555 !important;
+}
+
+#flatcal_minical .flatcal_todaycell .flatcal_daylink{/*pour bug affichage couleur Firefox*/
+  	color: #885555 !important;
+    background-color: #fff !important;
+}
+
+/*aujourdhui il y a un évènement*/
+#flatcal_minical .flatcal_todaycell .flatcal_busylink {
+    font-size: 1.6rem !important;
+  	border-radius : 25px;
+    padding: 4px !important;;
+}
+
+#flatcal_minical .flatcal_todaycell .flatcal_busylink {/*pour bug affichage background Firefox*/
+    border: 1px solid #885555 !important;
+    background-color: #885555 !important;
+}
+
+#flatcal_minical .flatcal_todaycell .flatcal_busylink:hover{/*pour bug affichage background Firefox*/
+    background-color: #fff !important;
+}
+
+/*************************************************************************/
+/***************** calendrier page complete template flat ****************/
+/*************************************************************************/
+
+.jev_toprow div.previousmonth, .jev_toprow div.nextmonth{
+    background-color: #885555 !important;
+    border: 1px solid #885555 !important;
+}
+
+.jev_toprow div.previousmonth > a, .jev_toprow div.nextmonth > a{
+    filter: invert(1);
+    color: black !important;
+}
+
+.jev_toprow div.currentmonth{
+    border: 1px solid #885555 !important;
+}
+
+.nav-items > div{
+    border: 1px solid #885555 !important;
+}
+
+.nav-items > div:first-child {
+    border-left: 1px solid #885555 !important;
+}
+
+.nav-items > div:last-child {
+    border-right: 1px solid #885555;
+}
+
+#jevents_body .nav-items div.active a, .jev_header2 .active a {
+    background-color: #885555 !important;
+}
+
+#jevents_body .nav-items > div a:hover {
+    background-color: #fff !important;
+    border-left: 1px solid #885555 !important;
+    border-bottom: 1px solid #885555 !important;
+    padding-bottom : 5px !important;
+}
+
+#jevents_body .cal_today a.cal_daylink{
+    background-color: #885555 !important;
+    border: 1px solid #885555 !important;
+    border-radius: 20px !important;
+}
+
+#jevents_body .cal_today a.cal_daylink:hover{
+    border: 1px solid #885555 !important;
+    color: #885555 !important;
+    background-color: #fff !important;
+    border-radius: 20px !important;
+}
+
+.eventstyle{
+  -webkit-box-shadow: -1px 1px 3px 0px #333;;
+  -moz-box-shadow: -1px 1px 3px 0px #333;
+  box-shadow: -1px 1px 3px 0px #333;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.eventstyle:hover{
+  -webkit-box-shadow: -2px 2px 5px 0px #333;;
+  -moz-box-shadow: -2px 2px 5px 0px #333;
+  box-shadow: -2px 2px 5px 0px #333;
+
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.fwb{/*Se débarasser de "occurence unique" dans le tooltip bootsrap*/
+  display : none !important;
+}
+
+.event_legend_container{/*Se débarasser de la légende en bas du calendrier*/
+  display : none !important;
+}
+
+.icon-envelope{/*enlever icone enveloppe pour mail de trop*/
+  background-image: unset !important;
+}
