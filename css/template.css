@@ -390,6 +390,13 @@ hr {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff;
 }
+
+/*Make "hr readmore" more visible for JCE editor : 04-04-18*/
+
+#system-readmore{
+    border-top: 1px solid;
+}
+
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
