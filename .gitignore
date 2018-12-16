@@ -45,3 +45,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#unraleted template directories
+images
+css/font-awesome
+less/*
+!less/template.less
+!less/variables.less
+favicon.ico

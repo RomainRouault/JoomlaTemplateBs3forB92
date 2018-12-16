@@ -1,8 +1,4 @@
 <?php
-/**
-* tutoriel de Cédric Keiflin pour créer son template Joomla! 3.x
-* http://www.joomlack.fr
-*/
 defined('_JEXEC') or die;
 function modChrome_perso($module, &$params, &$attribs)
 {
